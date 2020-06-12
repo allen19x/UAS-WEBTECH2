@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
     ngOnInit() {
         this.ls.isLoggedIn().then(
             (res) => {
-                this.router.navigate(["/pokemon"], { clearHistory: true });
+                this.router.navigate(["/digimon"], { clearHistory: true });
             },
             (err) => {
                 console.log(err);
@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
     login() {
         this.ls.login().then(
             (result) => {
-                this.router.navigate(["/pokemon"], { clearHistory: true });
+                this.router.navigate(["/digimon"], { clearHistory: true });
             },
             (err) => {
                 console.log(err);

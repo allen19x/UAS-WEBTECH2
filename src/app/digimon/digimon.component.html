@@ -1,0 +1,21 @@
+<ActionBar title="Digimon List"> </ActionBar>
+<ListView [items]="listDigimon">
+  <ng-template let-item="item">
+    <StackLayout>
+      <Label
+      [nsRouterLink]="['/digimon', item.name]"
+        [text]="item.name"
+      ></Label>
+    </StackLayout>
+  </ng-template>
+</ListView>
+
+<!-- <ActionBar title="Digimon List"> </ActionBar>
+<ListView>
+<StackLayout>
+  [nsRouterLink]="['/digimon', digimon.name]"
+<Label *ngFor="let digi of listDigimon">
+{{digi.name}} - {{digi.id}}
+</Label>
+</StackLayout>
+</ListView> -->

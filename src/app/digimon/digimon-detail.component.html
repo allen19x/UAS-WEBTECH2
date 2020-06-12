@@ -1,0 +1,32 @@
+<ActionBar [title]="'Details of ' + name"></ActionBar>
+<GridLayout [items]="digimon" rows="auto, auto, *" columns="*, *" class="p-10">
+  <Label class="h2" text="SUMMON!!!" row="0" colSpan="*"></Label>
+  <Image [src]="digimon.img" row="1" col="0"></Image>
+  <GridLayout
+    row="2"
+    col="0"
+    colSpan="2"
+    rows="auto, auto, auto"
+    columns="auto, *"
+  >
+    <Label class="h2" text="Stats" row="0" colSpan="2"></Label>
+    <Label
+      class="font-weight-bold"
+      text="Digimon Name "
+      row="1"
+      col="0"
+    ></Label>
+    <Label [text]="digimon.nama" row="1" col="1"></Label>
+    <Label
+      class="font-weight-bold"
+      text="Digimon Level "
+      row="2"
+      col="0"
+    ></Label>
+    <Label
+      [text]="digimon.level"
+      row="2"
+      col="2"
+    ></Label>
+  </GridLayout>
+</GridLayout>

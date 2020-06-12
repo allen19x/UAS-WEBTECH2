@@ -6,6 +6,11 @@
     <ScrollView row="1">
       <StackLayout class="sideStackLayout">
         <Label
+        text="About"
+        [nsRouterLink]="['/about']"
+        class="sideLabel sideLightGrayLabel m-b-10"
+      ></Label>
+        <Label
           text="LOGOUT"
           (tap)="logout()"
           class="sideLabel sideLightGrayLabel"
